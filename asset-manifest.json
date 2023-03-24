@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/cloudstorage/static/css/main.7acaea2f.css",
+    "main.js": "/cloudstorage/static/js/main.5416a960.js",
+    "static/media/registerimg.jpeg": "/cloudstorage/static/media/registerimg.7370e4dfb6029ef34eeb.jpeg",
+    "index.html": "/cloudstorage/index.html",
+    "main.7acaea2f.css.map": "/cloudstorage/static/css/main.7acaea2f.css.map",
+    "main.5416a960.js.map": "/cloudstorage/static/js/main.5416a960.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.5416a960.js"
+  ]
+}
