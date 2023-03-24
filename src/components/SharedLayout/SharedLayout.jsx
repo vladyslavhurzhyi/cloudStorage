@@ -1,12 +1,15 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 
 export const SharedLayout = () => {
   return (
     <>
-      <div>SharedLayout</div>
-      <div>SharedLayout</div>
-      <div>SharedLayout</div>
+      <div>____________</div>
+      <Link style={{ color: 'blue' }} to="/login">
+        Login!
+      </Link>
+      <div>____________</div>
+
       <Outlet />
     </>
   );
