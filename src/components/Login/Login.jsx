@@ -64,6 +64,7 @@ export const Login = () => {
           backgroundRepeat="no-repeat"
           w="50%"
           h="100%"
+          display={{ base: 'none', md: 'block' }}
         />
       </Flex>
     </>
