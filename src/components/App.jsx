@@ -6,6 +6,10 @@ import { MyCloud } from './MyCloud/MyCloud';
 import { Register } from './Register/Register';
 import { SharedLayout } from './SharedLayout/SharedLayout';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
+import { SharedWithMe } from './SharedWithMe/SharedWithMe';
+import { SharedWithOthers } from './SharedWithOthers/SharedWithOthers';
+import { Favorites } from './Favorites/Favorites';
+import { Trash } from './Trash/Trash';
 
 const theme = extendTheme({
   components: {
@@ -22,15 +26,16 @@ export const App = () => {
     <>
       <ChakraProvider theme={theme}>
         <Routes>
-          {/* SharedLayout  */}
           <Route path="/" element={<SharedLayout />}>
-            <Route path="/dashboard" element={<MyCloud />} />
-
-            {/* SharedLayout  */}
+            <Route path="mycloud" element={<MyCloud />} />
+            <Route path="shared-with-me" element={<SharedWithMe />} />
+            <Route path="shared-with-others" element={<SharedWithOthers />} />
+            <Route path="favorites" element={<Favorites />} />
+            <Route path="trash" element={<Trash />} />
           </Route>
-          <Route path="register" element={<Register />}></Route>
-          <Route path="login" element={<Login />}></Route>
-          <Route path="forgotpassword" element={<ForgotPassword />}></Route>
+          <Route path="/register" element={<Register />}></Route>
+          <Route path="/login" element={<Login />}></Route>
+          <Route path="/forgotpassword" element={<ForgotPassword />}></Route>
         </Routes>
       </ChakraProvider>
     </>

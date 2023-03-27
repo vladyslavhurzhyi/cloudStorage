@@ -1,16 +1,20 @@
+import { Grid } from '@chakra-ui/react';
+import { AppBar } from 'components/AppBar/AppBar';
+
 import React from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import { Suspense } from 'react';
+import { Outlet } from 'react-router-dom';
 
 export const SharedLayout = () => {
   return (
     <>
-      <div>____________</div>
-      <Link style={{ color: 'blue' }} to="/login">
-        Login!
-      </Link>
-      <div>____________</div>
-
-      <Outlet />
+      <Grid gridTemplateColumns="300px 1fr">
+        <AppBar>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Outlet />
+          </Suspense>
+        </AppBar>
+      </Grid>
     </>
   );
 };
