@@ -20,15 +20,16 @@ export const Login = () => {
     <>
       <Flex justifyContent="center" h="100vh" alignItems="center">
         <Box width={[300]} textAlign="center" m="0 auto" mb="15px">
-          <Input placeholder="Email" mb="12px" />
+          <Input placeholder="Email" mb="12px" h={'48px'} />
           <InputGroup size="md">
             <Input
               pr="4.5rem"
               type={show ? 'text' : 'password'}
               placeholder="Password"
               mb="12px"
+              h={'48px'}
             />
-            <InputRightElement width="4.5rem">
+            <InputRightElement width="3rem" mt={'2.5px'}>
               <Box as="button" onClick={handleClick}>
                 {show ? (
                   <ViewOffIcon
@@ -41,7 +42,15 @@ export const Login = () => {
               </Box>
             </InputRightElement>
           </InputGroup>
-          <Button color="white" bg="#7173EE" w="100%" mb="19px">
+          <Button
+            color="white"
+            bg="#7173EE"
+            w="100%"
+            mb="19px"
+            h={'48px'}
+            fontSize="18px"
+            fontWeight="500"
+          >
             Login
           </Button>
 

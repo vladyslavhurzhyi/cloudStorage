@@ -9,14 +9,22 @@ export const ForgotPassword = () => {
     <>
       <Flex justifyContent="center" h="100vh" alignItems="center">
         <Box width={[300]} textAlign="center" m="0 auto">
-          <Input placeholder="Email" mb="12px" />
-          <Button color="white" bg="#7173EE" w="100%" mb="19px">
-            Восстановить пароль
+          <Input placeholder="Email" mb="12px" h={'48px'} />
+          <Button
+            h={'48px'}
+            color="white"
+            bg="#7173EE"
+            w="100%"
+            mb="19px"
+            fontSize="18px"
+            fontWeight="500"
+          >
+            Reset password
           </Button>
           <Text>
-            Вспомнил пароль?{` `}
+            Remember password?{` `}
             <Link style={{ color: 'blue' }} to="/login">
-              Залогинься!
+              Login!
             </Link>
           </Text>
         </Box>

@@ -1,18 +1,46 @@
 import React from 'react';
 import { Box, Button } from '@chakra-ui/react';
 import { Input } from '@chakra-ui/react';
-import { IconButton } from '@chakra-ui/react';
-import { RxAvatar } from 'react-icons/rx';
+import { Image } from '@chakra-ui/react';
+import profileImage from './logo192.png';
+import { NoFilesOrFolders } from './NoFilesOrFolders/NoFilesOrFolders';
 
 export const MyCloud = () => {
   return (
     <>
-      <Box display={'flex'} padding={'20px'} gap="10px">
-        <Input placeholder="Search files..." />
-        <Button color="white" bg="#7173EE" w="100%" mb="19px">
-          Login
-        </Button>
-        <IconButton aria-label="Profile" icon={<RxAvatar />} />
+      <Box>
+        <Box
+          display={'flex'}
+          margin="40px 40px 40px "
+          gap="10px"
+          justifyContent={'space-between'}
+        >
+          <Input
+            placeholder="Search files..."
+            maxW={'550px'}
+            background={'rgba(246, 246, 252, 1)'}
+            color={'A0AEC0'}
+            fontWeight={'500'}
+            fontSize={'16px'}
+          />
+          <Box display={'flex'}>
+            <Button color="white" bg="#7173EE" w={'123px'} fontWeight="500">
+              Add file
+            </Button>
+            <button style={{ display: 'flex', height: '40px' }}>
+              <Image
+                ml={'30'}
+                src={profileImage}
+                alt="profile"
+                borderRadius={'full'}
+                w="40px"
+                h="40px"
+                border={'1px solid black'}
+              />
+            </button>
+          </Box>
+        </Box>
+        <NoFilesOrFolders />
       </Box>
     </>
   );

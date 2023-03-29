@@ -22,15 +22,16 @@ export const Register = () => {
     <>
       <Flex justifyContent="center" h="100vh" alignItems="center">
         <Box width={[300]} textAlign="center" m="0 auto">
-          <Input placeholder="Email" mb="12px" />
+          <Input placeholder="Email" mb="12px" h={'48px'} />
           <InputGroup size="md">
             <Input
+              h={'48px'}
               pr="4.5rem"
               type={show ? 'text' : 'password'}
               placeholder="Enter password"
               mb="12px"
             />
-            <InputRightElement width="4.5rem">
+            <InputRightElement width="3rem" mt={'2.5px'}>
               <Box as="button" onClick={handleClick}>
                 {show ? (
                   <ViewOffIcon
@@ -45,12 +46,13 @@ export const Register = () => {
           </InputGroup>
           <InputGroup size="md">
             <Input
+              h={'48px'}
               pr="4.5rem"
               type={showConfirm ? 'text' : 'password'}
               placeholder="Confirm password"
               mb="12px"
             />
-            <InputRightElement width="4.5rem">
+            <InputRightElement width="3rem" mt={'2.5px'}>
               <Box as="button" onClick={handleClickConfirm}>
                 {showConfirm ? (
                   <ViewOffIcon
@@ -63,7 +65,15 @@ export const Register = () => {
               </Box>
             </InputRightElement>
           </InputGroup>
-          <Button color="white" bg="#7173EE" w="100%" mb="19px">
+          <Button
+            color="white"
+            bg="#7173EE"
+            w="100%"
+            mb="19px"
+            h={'48px'}
+            fontWeight="500"
+            fontSize="18px"
+          >
             Create account
           </Button>
           <Text>

@@ -12,6 +12,10 @@ import { Favorites } from './Favorites/Favorites';
 import { Trash } from './Trash/Trash';
 
 const theme = extendTheme({
+  fonts: {
+    heading: `'Poppins', sans-serif`,
+    body: `'Poppins', sans-serif`,
+  },
   components: {
     Text: {
       baseStyle: {

@@ -17,6 +17,7 @@ export const Nav = styled.nav`
 `;
 
 export const NavLinkStyled = styled(NavLink)`
+  padding-left: 20px;
   align-items: center;
   transition: 200ms ease;
   margin-bottom: 10px;
@@ -35,9 +36,5 @@ export const NavLinkStyled = styled(NavLink)`
     color: white;
     scale: 1.05;
     transition-duration: 200ms;
-  }
-
-  svg {
-    margin-right: 10px;
   }
 `;
