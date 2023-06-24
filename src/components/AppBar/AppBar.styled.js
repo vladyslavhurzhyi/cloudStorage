@@ -6,8 +6,9 @@ export const Header = styled.header`
   height: 100vh;
 `;
 
-export const Nav = styled.nav`
+export const HeaderContainer = styled.div`
   display: flex;
+  height: 450px;
   flex-direction: column;
   align-items: flex-start;
   color: rgba(255, 255, 255, 0.65);
@@ -17,14 +18,14 @@ export const Nav = styled.nav`
 `;
 
 export const NavLinkStyled = styled(NavLink)`
+  display: flex;
   padding-left: 20px;
   align-items: center;
   transition: 200ms ease;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   height: 44px;
   width: 100%;
 
-  display: flex;
   &.active {
     color: #ffffff;
     /* padding: 10px; */
@@ -36,5 +37,11 @@ export const NavLinkStyled = styled(NavLink)`
     color: white;
     scale: 1.05;
     transition-duration: 200ms;
+  }
+  &:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+  &:last-of-type {
+    margin-bottom: auto;
   }
 `;

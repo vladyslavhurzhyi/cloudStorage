@@ -27,6 +27,27 @@ export const MyCloud = () => {
             <Button color="white" bg="#7173EE" w={'123px'} fontWeight="500">
               Add file
             </Button>
+
+            {/* <input
+              type="file"
+              id="file-input"
+              multiple
+              style={{ display: 'none' }}
+            />
+            <Button
+              color="white"
+              bg="#7173EE"
+              w={'123px'}
+              fontWeight="500"
+              onClick={() => {
+                const fileInput = document.getElementById('file-input');
+                fileInput.click();
+                const files = fileInput.files;
+              }}
+            >
+              Add files
+            </Button> */}
+
             <button style={{ display: 'flex', height: '40px' }}>
               <Image
                 ml={'30'}
